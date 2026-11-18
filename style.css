@@ -1,0 +1,171 @@
+/* LinguaBridge - Professional Design */
+/* CodeAlpha Task 1 - By Muhammad Yasir */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    /* Beautiful Gradient Background */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-container { width: 100%; max-width: 650px; }
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.logo span { color: #ffd700; }
+.badge {
+    background: rgba(255,255,255,0.25);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: 1px solid rgba(255,255,255,0.4);
+}
+
+/* Main White Card */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.card h2 {
+    text-align: center;
+    color: #1e1e2e;
+    font-size: 26px;
+}
+.subtitle {
+    text-align: center;
+    color: #7a7a8c;
+    font-size: 13px;
+    margin: 5px 0 20px 0;
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 6px;
+}
+#charCount { color: #999; font-weight: 400; }
+.auto-tag { color: #34a853; }
+
+textarea {
+    width: 100%;
+    height: 110px;
+    padding: 14px;
+    border: 2px solid #e8e8f0;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    resize: none;
+    transition: 0.3s;
+}
+textarea:focus { border-color: #667eea; background: #f8f9ff; }
+
+/* Language Boxes */
+.langs {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    margin: 18px 0;
+}
+.lang-box { flex: 1; }
+.lang-box label { font-size: 11px; font-weight: 700; color: #888; letter-spacing: 1px; }
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e8e8f0;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+    outline: none;
+    cursor: pointer;
+    background: #f8f9ff;
+}
+.swap-btn {
+    width: 45px; height: 45px;
+    border-radius: 50%;
+    border: none;
+    background: #667eea;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+.swap-btn:hover { background: #764ba2; transform: rotate(180deg); transition: 0.4s; }
+
+/* Translate Button - Gradient */
+.translate-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(102,126,234,0.4);
+}
+.translate-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 25px rgba(102,126,234,0.5); }
+
+/* Output */
+.output {
+    background: #f0f2ff;
+    border: 2px dashed #c3c8ff;
+    padding: 16px;
+    border-radius: 12px;
+    min-height: 70px;
+    font-size: 17px;
+    color: #222;
+    line-height: 1.5;
+}
+
+/* Bottom Buttons */
+.small-btns { display: flex; gap: 10px; margin-top: 15px; }
+.small-btns button {
+    flex: 1;
+    padding: 11px;
+    border: none;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+.copy-btn { background: #00b894 !important; }
+.speak-btn { background: #fdcb6e !important; color: #2d3436 !important; }
+.clear-btn { background: #ff7675 !important; }
+
+.footer {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    margin-top: 15px;
+    opacity: 0.9;
+}
